@@ -12,11 +12,11 @@ app.get("/api/:bin", async (req, res) => {
   res.type("application/json");
   res.send(data);
 });
-
+/*
 app.use(async (_, res) => {
   res.redirect(301, "https://github.com/ArnabXD/bins-ws-api");
 });
-
+*/
 app.listen(PORT, () => console.log(`[Server]: Running ar PORT => ${PORT}`));
 
 module.exports = app;
